@@ -5,6 +5,11 @@
 
   //Code here
 
+  var me = {
+    name: "Jared",
+    age: 27
+  };
+
 
 
 
@@ -18,7 +23,14 @@
 //Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. Have the values to those keys be your favorite thing in that category.
 
   //Code here
-
+var favoriteThings = {
+    band: "The Beatles",
+    food: "Curry",
+    person: "Vivian",
+    book: "Desert Solitaire",
+    movie: "Lost in Translation",
+    holiday: "Thanksgiving"
+  };
 
 
 
@@ -29,13 +41,17 @@
 
   //Code here
 
-
+favoriteThings["car"] = "Mustang";
+favoriteThings["brand"] = "Ford";
 
 
 
 //Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 
   //Code here
+
+  favoriteThings["food"] = "Chicken Nuggets";
+  favoriteThings["book"] = "Harry Potter";
 
 
 
@@ -57,6 +73,16 @@ that is named color, with the value being the color of your backpack.
 
   //Code here
 
+  var backPack = {
+
+  }
+
+  var item = "firstPocket"
+
+  backPack["firstPocket"] = "chapstick";
+  backPack.color = "red";
+  console.log(backPack.firstPocket);
+
 
 
 
@@ -65,6 +91,8 @@ that is named color, with the value being the color of your backpack.
 //After you do the above, alert your entire backPack object.
 
   //Code here
+
+
 
  
 
@@ -76,7 +104,7 @@ Instead, console.log your whole backPack object and then check out the console.
 
   //Code here
 
-
+  console.log(backPack);
 
 
 
@@ -98,6 +126,8 @@ var user2 = {
 
   //Code Here
 
+  user2.name="Tyler S. McGinnis";
+  user2.email="tyler.mcginnis@devmounta.in";
 
 
 
@@ -119,7 +149,9 @@ var user2 = {
 //Create an empty object called methodCollection.
 
   //Code Here
+var methodCollection =  {
 
+};
 
 
 
@@ -130,8 +162,15 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
  */
 
   //Code Here
+  
 
+  methodCollection.alertHello = function() {
+    alert("hello");
+  };
 
+  methodCollection.logHello = function() {
+    console.log("hello");
+  };
 
 
 
@@ -139,7 +178,8 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 
@@ -155,6 +195,15 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
+  function makePerson(name, birthday, ssn) {
+    this.name = name;
+    this.birthday = birthday;
+    this.ssn = ssn;
+  };
+
+  var tom = new makePerson("tom", "november 25", 123445677);
+
+  console.log(tom);
 
 
 
